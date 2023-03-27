@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p>
+        You have <span id="stuff">0</span> stuff
+    </p>
+    <div id="looking">
+        <p class="" id="searchingMessage">Looking for stuff... (<span id="looksDone">0</span>/<span
+                id="lookReq">10</span>)</p>
+    </div>
+    <div class="invisible" id="harvesting">
+        <p class="hidden" id="foundMessage">You found a pile of stuff.</p>
+        <div id="stuffPile">
+            <p id="top">/ \</p>
+            <p id="mid">/ | / / | \</p>
+            <p id="low">/ | / \ \ / | \</p>
+        </div>
+    </div>
+    <button class="hidden" id="harvest" onclick="harvest(1)">Harvest stuff</button>
+    <button id="look" onclick="look(1)">Look for stuff</button>
+    <div class="invisible" id="upgrading">
+        <p>Stuff Upgrades</p>
+        <div id="autoLook">
+            <p class="describable">> Auto-look
+                <button onclick="buy('autoLook')">Buy for
+                    <span id="autoLookCost">1</span>
+                    Stuff</button>
+            <p class="description">[Level <span id="autoLookLevel">1</span>]: Automatically looks <span
+                    id="autoLookEffect">1</span> time(s)
+                per
+                second.</p>
+            </p>
+        </div>
+        <div id="autoHarvest">
+            <p class="describable">> Auto-harvest
+                <button onclick="buy('autoHarvest')">Buy for
+                    <span id="autoHarvestCost">1</span>
+                    Stuff</button>
+            <p class="description">[Level <span id="autoHarvestLevel">1</span>]: Automatically harvests <span
+                    id="autoHarvestEffect">1</span> time(s)
+                per
+                second.</p>
+            </p>
+        </div>
+        <div id="goldStuff">
+            <p class="describable">> Gold Stuff
+                <button onclick="buy('goldStuff')">Buy for
+                    <span id="goldStuffCost">10</span>
+                    Stuff</button>
+            <p class="description">[Level <span id="goldStuffLevel">1</span>]: <span id="goldStuffEffect">1</span>%
+                chance to find gold stuff, which is worth 10 times as much stuff!</p>
+            </p>
+        </div>
+        <div id="doubleStuff">
+            <p class="describable">> Double Stuff
+                <button onclick="buy('doubleStuff')">Buy for
+                    <span id="doubleStuffCost">100</span>
+                    Stuff</button>
+            <p class="description">[Level <span id="doubleStuffLevel">1</span>]: <span id="doubleStuffEffect">2</span>x
+                stuff!</p>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+@font-face {
+    font-family: Uni Sans;
+    src: url(Uni\ Sans\ Thin.otf);
+}
+
+
+html {
+    font-size: x-large;
+    font-weight: normal;
+    font-family: Uni Sans;
+    background-color: rgb(17, 17, 17);
+    color: rgb(167, 245, 219);
+}
+
+button {
+    font-size: large;
+    font-family: Uni Sans;
+    background-color: rgb(17, 17, 17);
+    color: aquamarine;
+}
+
+#top {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 1.5em;
+}
+
+#mid {
+    margin-left: 0.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#low {
+    margin-top: 0;
+}
+
+#stuffPile {
+    font-size: xx-large;
+    margin-left: 0.5em;
+}
+
+#harvest,
+#look {
+    margin-left: 1.6em;
+}
+
+.hidden {
+    display: none;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.description {
+    font-size: medium;
+    font-weight: lighter;
+    margin-top: 0.25em;
+    margin-left: 1em
+}
+
+.describable {
+    margin-bottom: 0;
+}
+
+.gold {
+    color: gold;
+}
